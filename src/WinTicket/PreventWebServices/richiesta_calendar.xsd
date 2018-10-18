@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--Created with Liquid XML Studio - FREE Community Edition 7.0.4.795 (http://www.liquid-technologies.com)-->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" id="prevent" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Parametri">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="unbounded" name="IdSito" type="xs:positiveInteger" />
+      </xs:sequence>
+      <xs:attribute name="DataInizio" type="xs:date" use="required" />
+      <xs:attribute name="DataFine" type="xs:date" use="required" />
+      <xs:attribute name="TipoGS" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid XML Studio - FREE Community Edition 7.0.4.795 (http://www.liquid-technologies.com) -->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" id="prevent" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Out">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="SitoCalendario">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="1" maxOccurs="1" name="IdSito" type="xs:positiveInteger" />
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="Giornata">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="1" maxOccurs="1" name="Data" type="xs:date"  />
+                    <xs:element minOccurs="0" name="Note" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="Periodo">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="1" maxOccurs="1" name="Ora" type="xs:string" />
+                          <xs:element minOccurs="1" maxOccurs="1" name="Disponibili" type="xs:positiveInteger" />
+                          <xs:element minOccurs="1" maxOccurs="1" name="Max" type="xs:positiveInteger" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="ReturnCode" type="xs:string" use="optional" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

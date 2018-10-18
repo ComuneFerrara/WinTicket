@@ -1,0 +1,1496 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3AF09A02-AF50-4167-A385-DC8901BF85F7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WinTicketNext</RootNamespace>
+    <AssemblyName>WinTicketNext</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignManifests>true</SignManifests>
+    <ManifestCertificateThumbprint>C9E8D43884201F9128B17312A97D7E9A846F6964</ManifestCertificateThumbprint>
+    <ManifestKeyFile>xpsoft.pfx</ManifestKeyFile>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>true</GenerateManifests>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <ApplicationIcon>ticket_yellow.ico</ApplicationIcon>
+    <StartupObject>WinTicketNext.Program</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>C:\Users\Luca\Dropbox\PROGETTI\101-PROVFE-WinTicketNext\DEPLOY\101-PROVFE-WinTicketNext\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://soft.xpsoft.it/winticketnextrev1/</InstallUrl>
+    <UpdateUrl>http://soft.xpsoft.it/winticketnextrev1/</UpdateUrl>
+    <SupportUrl>http://soft.xpsoft.it/help</SupportUrl>
+    <ErrorReportUrl>http://soft.xpsoft.it/help</ErrorReportUrl>
+    <ProductName>Win Ticket Next</ProductName>
+    <PublisherName>XPSoft</PublisherName>
+    <MinimumRequiredVersion>1.0.0.308</MinimumRequiredVersion>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>index.htm</WebPage>
+    <ApplicationRevision>309</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v12.2, Version=12.2.18.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v12.2.Core, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v12.2.Core, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v12.2, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v12.2.Core, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v12.2.Core, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v12.2, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v12.2, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v12.2, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v12.2.Wizard, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v12.2, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v12.2.UI, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v12.2, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v12.2, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v12.2, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v12.2, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v12.2.Core, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v12.2, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v12.2.Extensions, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v12.2.UI, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v12.2, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v12.2, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v12.2.Extensions, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v12.2.Printing, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v12.2.Reporting.Extensions, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v12.2, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v12.2.Core, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v12.2.Extensions, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraSpellChecker.v12.2, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.SpellChecker.v12.2.Core, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v12.2, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GemBox.Spreadsheet">
+      <HintPath>..\..\LIBRE\GemBox\GemBox.Spreadsheet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CostruzionePercorso\Prenotazione\XtraReportStampaMyFeOnline.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CostruzionePercorso\Prenotazione\XtraReportStampaMyFeOnline.Designer.cs">
+      <DependentUpon>XtraReportStampaMyFeOnline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CostruzionePercorso\Prenotazione\XtraReportStampaMyFeAlberghi.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CostruzionePercorso\Prenotazione\XtraReportStampaMyFeAlberghi.Designer.cs">
+      <DependentUpon>XtraReportStampaMyFeAlberghi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CostruzionePercorso\Prenotazione\XtraReportRigaStampaMyFE.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CostruzionePercorso\Prenotazione\XtraReportRigaStampaMyFE.Designer.cs">
+      <DependentUpon>XtraReportRigaStampaMyFE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CostruzionePercorso\RibbonFormCardMyFeTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CostruzionePercorso\RibbonFormCardMyFeTicket.Designer.cs">
+      <DependentUpon>RibbonFormCardMyFeTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CostruzionePercorso\Prenotazione\XtraReportStampaMyFe.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CostruzionePercorso\Prenotazione\XtraReportStampaMyFe.Designer.cs">
+      <DependentUpon>XtraReportStampaMyFe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CostruzionePercorso\RibbonFormMatricolaUnife.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CostruzionePercorso\RibbonFormMatricolaUnife.Designer.cs">
+      <DependentUpon>RibbonFormMatricolaUnife.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CostruzionePercorso\RibbonFormCardMyFeTurista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CostruzionePercorso\RibbonFormCardMyFeTurista.Designer.cs">
+      <DependentUpon>RibbonFormCardMyFeTurista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CostruzionePercorso\RibbonFormAskBonus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CostruzionePercorso\RibbonFormAskBonus.Designer.cs">
+      <DependentUpon>RibbonFormAskBonus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CostruzionePercorso\XtraFormCheckRegola.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CostruzionePercorso\XtraFormCheckRegola.Designer.cs">
+      <DependentUpon>XtraFormCheckRegola.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoGrigliaCard.cs" />
+    <Compile Include="Pivot\RibbonFormPivotRigaIngresso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pivot\RibbonFormPivotRigaIngresso.Designer.cs">
+      <DependentUpon>RibbonFormPivotRigaIngresso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pivot\XtraFormPivotDettaglioEntrate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pivot\XtraFormPivotDettaglioEntrate.Designer.cs">
+      <DependentUpon>XtraFormPivotDettaglioEntrate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pivot\XtraFormSave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pivot\XtraFormSave.Designer.cs">
+      <DependentUpon>XtraFormSave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pivot\XtraFormLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pivot\XtraFormLoad.Designer.cs">
+      <DependentUpon>XtraFormLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\ClassNumerazione.cs" />
+    <Compile Include="Storico\Rep07\DatiReport07.cs" />
+    <Compile Include="Storico\Rep07\XtraFormReport07.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storico\Rep07\XtraFormReport07.Designer.cs">
+      <DependentUpon>XtraFormReport07.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\Rep07\XtraReport07.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Storico\Rep07\XtraReport07.Designer.cs">
+      <DependentUpon>XtraReport07.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\Rep01t\DatiReport01t.cs" />
+    <Compile Include="Storico\Rep01t\XtraFormReport01t.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storico\Rep01t\XtraFormReport01t.Designer.cs">
+      <DependentUpon>XtraFormReport01t.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\Rep01t\XtraReport01t.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Storico\Rep01t\XtraReport01t.Designer.cs">
+      <DependentUpon>XtraReport01t.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\Rep06\DatiReport06.cs" />
+    <Compile Include="Storico\Rep06\XtraFormReport06.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storico\Rep06\XtraFormReport06.Designer.cs">
+      <DependentUpon>XtraFormReport06.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\Rep06\XtraReport06.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Storico\Rep06\XtraReport06.Designer.cs">
+      <DependentUpon>XtraReport06.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\Rep04\DatiReport04.cs" />
+    <Compile Include="Storico\Rep04\XtraFormReport04.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storico\Rep04\XtraFormReport04.Designer.cs">
+      <DependentUpon>XtraFormReport04.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\Rep04\XtraReport04.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Storico\Rep04\XtraReport04.Designer.cs">
+      <DependentUpon>XtraReport04.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\GestioneApertureIngresso.cs" />
+    <Compile Include="Storico\GestoreAperture.cs" />
+    <Compile Include="Storico\MyDateNavigator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Storico\Rep03\DatiReport03.cs" />
+    <Compile Include="Storico\Rep03\XtraFormReport03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storico\Rep03\XtraFormReport03.Designer.cs">
+      <DependentUpon>XtraFormReport03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\Rep03\XtraReport03.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Storico\Rep03\XtraReport03.Designer.cs">
+      <DependentUpon>XtraReport03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\Rep01b\DatiReport01b.cs" />
+    <Compile Include="Storico\Rep01b\XtraFormReport01b.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storico\Rep01b\XtraFormReport01bb.Designer.cs">
+      <DependentUpon>XtraFormReport01b.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\Rep01b\XtraReport01b.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Storico\Rep01b\XtraReport01bb.Designer.cs">
+      <DependentUpon>XtraReport01b.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\Rep03b\DatiReport03b.cs" />
+    <Compile Include="Storico\Rep03b\XtraFormReport03b.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storico\Rep03b\XtraFormReport03b.Designer.cs">
+      <DependentUpon>XtraFormReport03b.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\Rep03b\XtraReport03b.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Storico\Rep03b\XtraReport03b.Designer.cs">
+      <DependentUpon>XtraReport03b.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\RepBv1\DatiReportBv1.cs" />
+    <Compile Include="Storico\RepBv1\XtraFormReportBv1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storico\RepBv1\XtraFormReportBv1.Designer.cs">
+      <DependentUpon>XtraFormReportBv1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\RepBv1\XtraReportBv1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Storico\RepBv1\XtraReportBv1.Designer.cs">
+      <DependentUpon>XtraReportBv1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\RepBv2\DatiReportBv2.cs" />
+    <Compile Include="Storico\RepBv2\XtraFormReportBv2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storico\RepBv2\XtraFormReportBv2.Designer.cs">
+      <DependentUpon>XtraFormReportBv2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\RepBv2\XtraReportBv2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Storico\RepBv2\XtraReportBv2.Designer.cs">
+      <DependentUpon>XtraReportBv2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\RepVersamenti\DatiReportCorrispettivi.cs" />
+    <Compile Include="Storico\RepVersamenti\XtraReportCorrispettiviBiglietteria.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Storico\RepVersamenti\XtraReportCorrispettiviBiglietteria.Designer.cs">
+      <DependentUpon>XtraReportCorrispettiviBiglietteria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\RepVersamenti\XtraReportCorrispettiviInternet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Storico\RepVersamenti\XtraReportCorrispettiviInternetInternet.Designer.cs">
+      <DependentUpon>XtraReportCorrispettiviInternet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\RepVersamenti\XtraReportQ1A.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Storico\RepVersamenti\XtraReportQ1A.Designer.cs">
+      <DependentUpon>XtraReportQ1A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\RepVersamenti\XtraFormReportQ1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storico\RepVersamenti\XtraFormReportQ1.Designer.cs">
+      <DependentUpon>XtraFormReportQ1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\XtraFormDatiFatturaApp18.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storico\XtraFormDatiFatturaApp18.Designer.cs">
+      <DependentUpon>XtraFormDatiFatturaApp18.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\XtraReportFattura.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Storico\XtraReportFattura.Designer.cs">
+      <DependentUpon>XtraReportFattura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\RepVersamenti\XtraReportSituazioneInternet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Storico\RepVersamenti\XtraReportSituazioneInternet.Designer.cs">
+      <DependentUpon>XtraReportSituazioneInternet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\RepVersamenti\XtraReportSituazioneProv.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Storico\RepVersamenti\XtraReportSituazioneProv.Designer.cs">
+      <DependentUpon>XtraReportSituazioneProv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\RepVersamenti\XtraFormCreaVersamentoManuale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storico\RepVersamenti\XtraFormCreaVersamentoManuale.Designer.cs">
+      <DependentUpon>XtraFormCreaVersamentoManuale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\RepVersamenti\XtraReportSituazione2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Storico\RepVersamenti\XtraReportSituazione2.Designer.cs">
+      <DependentUpon>XtraReportSituazione2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\RibbonFormElencoTransazioni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storico\RibbonFormElencoTransazioni.Designer.cs">
+      <DependentUpon>RibbonFormElencoTransazioni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\RibbonFormElencoCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storico\RibbonFormElencoCard.Designer.cs">
+      <DependentUpon>RibbonFormElencoCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\RibbonFormPivotCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storico\RibbonFormPivotCard.Designer.cs">
+      <DependentUpon>RibbonFormPivotCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\RibbonFormStoricoInserimento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storico\RibbonFormStoricoInserimento.Designer.cs">
+      <DependentUpon>RibbonFormStoricoInserimento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\Rep01\DatiReport01.cs" />
+    <Compile Include="Storico\Rep01\XtraFormReport01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storico\Rep01\XtraFormReport01.Designer.cs">
+      <DependentUpon>XtraFormReport01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\Rep01\XtraReport01.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Storico\Rep01\XtraReport01.Designer.cs">
+      <DependentUpon>XtraReport01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\Rep02\DatiReport02.cs" />
+    <Compile Include="Storico\Rep02\XtraFormReport02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storico\Rep02\XtraFormReport02.Designer.cs">
+      <DependentUpon>XtraFormReport02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\Rep02\XtraReport02.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Storico\Rep02\XtraReport02.Designer.cs">
+      <DependentUpon>XtraReport02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\RepVersamenti\DatiVersamentiAltriEnti.cs" />
+    <Compile Include="Storico\RepVersamenti\XtraFormAltriEnti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storico\RepVersamenti\XtraFormAltriEnti.Designer.cs">
+      <DependentUpon>XtraFormAltriEnti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\RepVersamenti\XtraFormQuietanzaContanti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storico\RepVersamenti\XtraFormQuietanzaContanti.Designer.cs">
+      <DependentUpon>XtraFormQuietanzaContanti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\RepVersamenti\DatiReportQ1.cs" />
+    <Compile Include="Storico\RepVersamenti\XtraFormQuietanzaPos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storico\RepVersamenti\XtraFormQuietanzaPos.Designer.cs">
+      <DependentUpon>XtraFormQuietanzaPos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\RepVersamenti\XtraFormReportSituazione.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storico\RepVersamenti\XtraFormReportSituazione.Designer.cs">
+      <DependentUpon>XtraFormReportSituazione.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\RepVersamenti\XtraReportQ1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Storico\RepVersamenti\XtraReportQ1.Designer.cs">
+      <DependentUpon>XtraReportQ1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\RepVersamenti\XtraReportQ1sub.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Storico\RepVersamenti\XtraReportQ1sub.Designer.cs">
+      <DependentUpon>XtraReportQ1sub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\RepVersamenti\XtraReportSituazione.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Storico\RepVersamenti\XtraReportSituazione.Designer.cs">
+      <DependentUpon>XtraReportSituazione.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\RepVersamenti\RibbonFormVersamenti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storico\RepVersamenti\RibbonFormVersamenti.Designer.cs">
+      <DependentUpon>RibbonFormVersamenti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\TotaliPostazione.cs" />
+    <Compile Include="Storico\RepVersamenti\XtraFormCreaVersamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storico\RepVersamenti\XtraFormCreaVersamento.Designer.cs">
+      <DependentUpon>XtraFormCreaVersamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\XtraFormCreaFattura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storico\XtraFormCreaFattura.Designer.cs">
+      <DependentUpon>XtraFormCreaFattura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\XtraFormAssegnaCards.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storico\XtraFormAssegnaCards.Designer.cs">
+      <DependentUpon>XtraFormAssegnaCards.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\XtraFormCalendarioAperture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storico\XtraFormCalendarioAperture.Designer.cs">
+      <DependentUpon>XtraFormCalendarioAperture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraFormSync.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraFormSync.Designer.cs">
+      <DependentUpon>XtraFormSync.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraReportPostazione5.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XtraReportPostazione5.Designer.cs">
+      <DependentUpon>XtraReportPostazione5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CostruzionePercorso\ElencoSoluzioni.cs" />
+    <Compile Include="CostruzionePercorso\EventoFineSuggerimenti.cs" />
+    <Compile Include="CostruzionePercorso\Prenotazione\XtraReportStampa2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CostruzionePercorso\Prenotazione\XtraReportStampa2.Designer.cs">
+      <DependentUpon>XtraReportStampa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CostruzionePercorso\SoluzioneIngressiItem.cs" />
+    <Compile Include="CostruzionePercorso\XtraFormDownloadPrevent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CostruzionePercorso\XtraFormDownloadPrevent.Designer.cs">
+      <DependentUpon>XtraFormDownloadPrevent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pivot\RibbonFormPivotEntrate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pivot\RibbonFormPivotEntrate.Designer.cs">
+      <DependentUpon>RibbonFormPivotEntrate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pivot\PivotOffertaItem.cs" />
+    <Compile Include="Pivot\RibbonFormPivotOfferta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pivot\RibbonFormPivotOfferta.Designer.cs">
+      <DependentUpon>RibbonFormPivotOfferta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CostruzionePercorso\Prenotazione\ReportHelper.cs" />
+    <Compile Include="StaticInfo.cs" />
+    <Compile Include="Storico\XtraFormInserimentoStorico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storico\XtraFormInserimentoStorico.Designer.cs">
+      <DependentUpon>XtraFormInserimentoStorico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sync\SyncHelper.cs" />
+    <Compile Include="Validazione\RibbonFormValidazione.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Validazione\RibbonFormValidazione.Designer.cs">
+      <DependentUpon>RibbonFormValidazione.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraFormCambiaPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraFormCambiaPassword.Designer.cs">
+      <DependentUpon>XtraFormCambiaPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraReportStampePeriodo3.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XtraReportStampePeriodo3.Designer.cs">
+      <DependentUpon>XtraReportStampePeriodo3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CostruzionePercorso\RibbonFormMultiploAdv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CostruzionePercorso\RibbonFormMultiploAdv.Designer.cs">
+      <DependentUpon>RibbonFormMultiploAdv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\XtraFormDettaglioVendita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storico\XtraFormDettaglioVendita.Designer.cs">
+      <DependentUpon>XtraFormDettaglioVendita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\XtraFormAskReportPostazione.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storico\XtraFormAskReportPostazione.Designer.cs">
+      <DependentUpon>XtraFormAskReportPostazione.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CostruzionePercorso\Prenotazione\XtraReportRigaStampa1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CostruzionePercorso\Prenotazione\XtraReportRigaStampa1.Designer.cs">
+      <DependentUpon>XtraReportRigaStampa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CostruzionePercorso\XtraFormAskInfoPrenotazione.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CostruzionePercorso\XtraFormAskInfoPrenotazione.Designer.cs">
+      <DependentUpon>XtraFormAskInfoPrenotazione.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CostruzionePercorso\XtraFormProfiloClienteNT2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CostruzionePercorso\XtraFormProfiloClienteNT2.Designer.cs">
+      <DependentUpon>XtraFormProfiloClienteNT2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CostruzionePercorso\XtraFormProfiloClienteNT1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CostruzionePercorso\XtraFormProfiloClienteNT1.Designer.cs">
+      <DependentUpon>XtraFormProfiloClienteNT1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CostruzionePercorso\Prenotazione\XtraFormStampa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CostruzionePercorso\Prenotazione\XtraFormStampa.Designer.cs">
+      <DependentUpon>XtraFormStampa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CostruzionePercorso\GestoreTitoli.cs" />
+    <Compile Include="CostruzionePercorso\GestoreProfili.cs" />
+    <Compile Include="CostruzionePercorso\OptimizationFactory.cs" />
+    <Compile Include="CostruzionePercorso\Prenotazione\XtraUserControlCalendario2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CostruzionePercorso\Prenotazione\XtraUserControlCalendario2.Designer.cs">
+      <DependentUpon>XtraUserControlCalendario2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CostruzionePercorso\Prenotazione\RibbonFormPrenotazione2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CostruzionePercorso\Prenotazione\RibbonFormPrenotazione2.Designer.cs">
+      <DependentUpon>RibbonFormPrenotazione2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CostruzionePercorso\Prenotazione\EventoNotificaScheduler.cs" />
+    <Compile Include="CostruzionePercorso\Prenotazione\PrenotazioneComplessiva.cs" />
+    <Compile Include="CostruzionePercorso\Prenotazione\PrenotazioneIngresso.cs" />
+    <Compile Include="CostruzionePercorso\Prenotazione\SingolaPrenotazione.cs" />
+    <Compile Include="CostruzionePercorso\Prenotazione\XtraFormEditPrenotazione.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CostruzionePercorso\Prenotazione\XtraFormEditPrenotazione.Designer.cs">
+      <DependentUpon>XtraFormEditPrenotazione.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CostruzionePercorso\ProfiloCliente.cs" />
+    <Compile Include="CostruzionePercorso\Suggerimento.cs" />
+    <Compile Include="RibbonFormDashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RibbonFormDashBoard.Designer.cs">
+      <DependentUpon>RibbonFormDashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storico\RibbonFormStorico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storico\RibbonFormStorico.Designer.cs">
+      <DependentUpon>RibbonFormStorico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraFormMessaggio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraFormMessaggio.Designer.cs">
+      <DependentUpon>XtraFormMessaggio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pivot\RibbonFormPivotRigaVenditaVariante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pivot\RibbonFormPivotRigaVenditaVariante.Designer.cs">
+      <DependentUpon>RibbonFormPivotRigaVenditaVariante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CostruzionePercorso\SoluzioneIngressi.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CostruzionePercorso\Prenotazione\XtraReportStampaMyFeOnline.resx">
+      <DependentUpon>XtraReportStampaMyFeOnline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CostruzionePercorso\Prenotazione\XtraReportStampaMyFeAlberghi.resx">
+      <DependentUpon>XtraReportStampaMyFeAlberghi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CostruzionePercorso\Prenotazione\XtraReportRigaStampaMyFE.resx">
+      <DependentUpon>XtraReportRigaStampaMyFE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CostruzionePercorso\RibbonFormCardMyFeTicket.resx">
+      <DependentUpon>RibbonFormCardMyFeTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CostruzionePercorso\Prenotazione\XtraReportStampaMyFe.resx">
+      <DependentUpon>XtraReportStampaMyFe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CostruzionePercorso\RibbonFormMatricolaUnife.resx">
+      <DependentUpon>RibbonFormMatricolaUnife.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CostruzionePercorso\RibbonFormCardMyFeTurista.resx">
+      <DependentUpon>RibbonFormCardMyFeTurista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CostruzionePercorso\RibbonFormAskBonus.resx">
+      <DependentUpon>RibbonFormAskBonus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CostruzionePercorso\XtraFormCheckRegola.resx">
+      <DependentUpon>XtraFormCheckRegola.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pivot\RibbonFormPivotRigaIngresso.resx">
+      <DependentUpon>RibbonFormPivotRigaIngresso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pivot\XtraFormPivotDettaglioEntrate.resx">
+      <DependentUpon>XtraFormPivotDettaglioEntrate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pivot\XtraFormSave.resx">
+      <DependentUpon>XtraFormSave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pivot\XtraFormLoad.resx">
+      <DependentUpon>XtraFormLoad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\Rep07\XtraFormReport07.resx">
+      <DependentUpon>XtraFormReport07.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\Rep07\XtraReport07.resx">
+      <DependentUpon>XtraReport07.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\Rep01t\XtraFormReport01t.resx">
+      <DependentUpon>XtraFormReport01t.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\Rep01t\XtraReport01t.resx">
+      <DependentUpon>XtraReport01t.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\Rep06\XtraFormReport06.resx">
+      <DependentUpon>XtraFormReport06.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\Rep06\XtraReport06.resx">
+      <DependentUpon>XtraReport06.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\Rep04\XtraFormReport04.resx">
+      <DependentUpon>XtraFormReport04.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\Rep04\XtraReport04.resx">
+      <DependentUpon>XtraReport04.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\Rep03\XtraFormReport03.resx">
+      <DependentUpon>XtraFormReport03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\Rep03\XtraReport03.resx">
+      <DependentUpon>XtraReport03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\Rep01b\XtraFormReport01b.resx">
+      <DependentUpon>XtraFormReport01b.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\Rep01b\XtraReport01b.resx">
+      <DependentUpon>XtraReport01b.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\Rep03b\XtraFormReport03b.resx">
+      <DependentUpon>XtraFormReport03b.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\Rep03b\XtraReport03b.resx">
+      <DependentUpon>XtraReport03b.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\RepBv1\XtraFormReportBv1.resx">
+      <DependentUpon>XtraFormReportBv1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\RepBv1\XtraReportBv1.resx">
+      <DependentUpon>XtraReportBv1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\RepBv2\XtraFormReportBv2.resx">
+      <DependentUpon>XtraFormReportBv2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\RepBv2\XtraReportBv2.resx">
+      <DependentUpon>XtraReportBv2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\RepVersamenti\XtraReportCorrispettiviBiglietteria.resx">
+      <DependentUpon>XtraReportCorrispettiviBiglietteria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\RepVersamenti\XtraReportCorrispettiviInternet.resx">
+      <DependentUpon>XtraReportCorrispettiviInternet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\RepVersamenti\XtraReportQ1A.resx">
+      <DependentUpon>XtraReportQ1A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\RepVersamenti\XtraFormReportQ1.resx">
+      <DependentUpon>XtraFormReportQ1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\XtraFormDatiFatturaApp18.resx">
+      <DependentUpon>XtraFormDatiFatturaApp18.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\XtraReportFattura.resx">
+      <DependentUpon>XtraReportFattura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\RepVersamenti\XtraReportSituazioneInternet.resx">
+      <DependentUpon>XtraReportSituazioneInternet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\RepVersamenti\XtraReportSituazioneProv.resx">
+      <DependentUpon>XtraReportSituazioneProv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\RepVersamenti\XtraFormCreaVersamentoManuale.resx">
+      <DependentUpon>XtraFormCreaVersamentoManuale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\RepVersamenti\XtraReportSituazione2.resx">
+      <DependentUpon>XtraReportSituazione2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\RibbonFormElencoTransazioni.resx">
+      <DependentUpon>RibbonFormElencoTransazioni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\RibbonFormElencoCard.resx">
+      <DependentUpon>RibbonFormElencoCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\RibbonFormPivotCard.resx">
+      <DependentUpon>RibbonFormPivotCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\RibbonFormStoricoInserimento.resx">
+      <DependentUpon>RibbonFormStoricoInserimento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\Rep01\XtraFormReport01.resx">
+      <DependentUpon>XtraFormReport01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\Rep01\XtraReport01.resx">
+      <DependentUpon>XtraReport01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\Rep02\XtraFormReport02.resx">
+      <DependentUpon>XtraFormReport02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\Rep02\XtraReport02.resx">
+      <DependentUpon>XtraReport02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\RepVersamenti\XtraFormAltriEnti.resx">
+      <DependentUpon>XtraFormAltriEnti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\RepVersamenti\XtraFormQuietanzaContanti.resx">
+      <DependentUpon>XtraFormQuietanzaContanti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\RepVersamenti\XtraFormQuietanzaPos.resx">
+      <DependentUpon>XtraFormQuietanzaPos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\RepVersamenti\XtraFormReportSituazione.resx">
+      <DependentUpon>XtraFormReportSituazione.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\RepVersamenti\XtraReportQ1.resx">
+      <DependentUpon>XtraReportQ1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\RepVersamenti\XtraReportQ1sub.resx">
+      <DependentUpon>XtraReportQ1sub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\RepVersamenti\XtraReportSituazione.resx">
+      <DependentUpon>XtraReportSituazione.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\RepVersamenti\RibbonFormVersamenti.resx">
+      <DependentUpon>RibbonFormVersamenti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\RepVersamenti\XtraFormCreaVersamento.resx">
+      <DependentUpon>XtraFormCreaVersamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\XtraFormCreaFattura.resx">
+      <DependentUpon>XtraFormCreaFattura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\XtraFormAssegnaCards.resx">
+      <DependentUpon>XtraFormAssegnaCards.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\XtraFormCalendarioAperture.resx">
+      <DependentUpon>XtraFormCalendarioAperture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraFormSync.resx">
+      <DependentUpon>XtraFormSync.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraReportPostazione5.resx">
+      <DependentUpon>XtraReportPostazione5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CostruzionePercorso\Prenotazione\XtraReportStampa2.resx">
+      <DependentUpon>XtraReportStampa2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CostruzionePercorso\XtraFormDownloadPrevent.resx">
+      <DependentUpon>XtraFormDownloadPrevent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pivot\RibbonFormPivotEntrate.resx">
+      <DependentUpon>RibbonFormPivotEntrate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pivot\RibbonFormPivotOfferta.resx">
+      <DependentUpon>RibbonFormPivotOfferta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\XtraFormInserimentoStorico.resx">
+      <DependentUpon>XtraFormInserimentoStorico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Validazione\RibbonFormValidazione.resx">
+      <DependentUpon>RibbonFormValidazione.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraFormCambiaPassword.resx">
+      <DependentUpon>XtraFormCambiaPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraReportStampePeriodo3.resx">
+      <DependentUpon>XtraReportStampePeriodo3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CostruzionePercorso\RibbonFormMultiploAdv.resx">
+      <DependentUpon>RibbonFormMultiploAdv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\XtraFormDettaglioVendita.resx">
+      <DependentUpon>XtraFormDettaglioVendita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\XtraFormAskReportPostazione.resx">
+      <DependentUpon>XtraFormAskReportPostazione.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CostruzionePercorso\Prenotazione\XtraReportRigaStampa1.resx">
+      <DependentUpon>XtraReportRigaStampa1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CostruzionePercorso\XtraFormAskInfoPrenotazione.resx">
+      <DependentUpon>XtraFormAskInfoPrenotazione.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CostruzionePercorso\XtraFormProfiloClienteNT2.resx">
+      <DependentUpon>XtraFormProfiloClienteNT2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CostruzionePercorso\XtraFormProfiloClienteNT1.resx">
+      <DependentUpon>XtraFormProfiloClienteNT1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CostruzionePercorso\Prenotazione\XtraFormStampa.resx">
+      <DependentUpon>XtraFormStampa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CostruzionePercorso\Prenotazione\XtraUserControlCalendario2.resx">
+      <DependentUpon>XtraUserControlCalendario2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CostruzionePercorso\Prenotazione\RibbonFormPrenotazione2.resx">
+      <DependentUpon>RibbonFormPrenotazione2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CostruzionePercorso\Prenotazione\XtraFormEditPrenotazione.resx">
+      <DependentUpon>XtraFormEditPrenotazione.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RibbonFormDashBoard.resx">
+      <DependentUpon>RibbonFormDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storico\RibbonFormStorico.resx">
+      <DependentUpon>RibbonFormStorico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraFormMessaggio.resx">
+      <DependentUpon>XtraFormMessaggio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pivot\RibbonFormPivotRigaVenditaVariante.resx">
+      <DependentUpon>RibbonFormPivotRigaVenditaVariante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pivot\XtraFormPivotDettaglio.resx">
+      <DependentUpon>XtraFormPivotDettaglio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraFormUserLogon.resx">
+      <DependentUpon>XtraFormUserLogon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraReportStampePeriodo.resx">
+      <DependentUpon>XtraReportStampePeriodo.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\DataSources\WinTicketNext.Storico.Rep01.DatiReport01.datasource" />
+    <None Include="Properties\DataSources\WinTicketNext.Storico.Rep01b.DatiReport01b.datasource" />
+    <None Include="Properties\DataSources\WinTicketNext.Storico.Rep01t.DatiReport01t.datasource" />
+    <None Include="Properties\DataSources\WinTicketNext.Storico.Rep02.DatiReport02.datasource" />
+    <None Include="Properties\DataSources\WinTicketNext.Storico.Rep03.DatiReport03.datasource" />
+    <None Include="Properties\DataSources\WinTicketNext.Storico.Rep03b.DatiReport03b.datasource" />
+    <None Include="Properties\DataSources\WinTicketNext.Storico.Rep04.DatiReport04.datasource" />
+    <None Include="Properties\DataSources\WinTicketNext.Storico.Rep06.DatiReport06.datasource" />
+    <None Include="Properties\DataSources\WinTicketNext.Storico.Rep07.DatiReport07.datasource" />
+    <None Include="Properties\DataSources\WinTicketNext.Storico.RepBv1.DatiReportBv1.datasource" />
+    <None Include="Properties\DataSources\WinTicketNext.Storico.RepBv2.DatiReportBv2.datasource" />
+    <None Include="Properties\DataSources\WinTicketNext.Storico.RepVersamenti.DatiReportCorrispettivi.datasource" />
+    <None Include="Properties\DataSources\WinTicketNext.Storico.RepVersamenti.DatiReportQ1.datasource" />
+    <None Include="Properties\DataSources\WinTicketNext.Storico.TotaliPostazione.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Pivot\XtraFormPivotDettaglio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pivot\XtraFormPivotDettaglio.Designer.cs">
+      <DependentUpon>XtraFormPivotDettaglio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraFormUserLogon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraFormUserLogon.Designer.cs">
+      <DependentUpon>XtraFormUserLogon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraReportStampePeriodo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XtraReportStampePeriodo.Designer.cs">
+      <DependentUpon>XtraReportStampePeriodo.cs</DependentUpon>
+    </Compile>
+    <None Include="WinTicketNext_TemporaryKey.pfx" />
+    <None Include="xpsoft.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\ticket_yellow.png" />
+    <None Include="Resources\Logo.png" />
+    <None Include="Resources\user3.png" />
+    <None Include="Resources\users2.png" />
+    <None Include="Resources\users_family.png" />
+    <None Include="Resources\media_play_green.png" />
+    <None Include="Resources\selection_delete.png" />
+    <None Include="Resources\signpost.png" />
+    <None Include="Resources\check.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\key.png" />
+    <None Include="Resources\symbol_sum.png" />
+    <None Include="Resources\printer.png" />
+    <None Include="Resources\table_view.png" />
+    <None Include="Resources\cube_green.png" />
+    <None Include="Resources\cubes.png" />
+    <None Include="Resources\folder_document.png" />
+    <None Include="Resources\floppy_disk_yellow.png" />
+    <None Include="Resources\cashier.png" />
+    <None Include="Resources\nav_refresh_green.png" />
+    <None Include="Resources\add2.png" />
+    <None Include="Resources\sign_forbidden.png" />
+    <None Include="Resources\sign_stop.png" />
+    <None Include="Resources\checkbox.png" />
+    <None Include="Resources\checkbox_unchecked.png" />
+    <None Include="Resources\ok.png" />
+    <None Include="Resources\delete2.png" />
+    <None Include="Resources\about.png" />
+    <None Include="Resources\arrow_right_green.png" />
+    <None Include="Resources\arrow2_right_green.png" />
+    <None Include="Resources\calendar_preferences.png" />
+    <None Include="Resources\printer2.png" />
+    <None Include="Resources\scroll_view.png" />
+    <None Include="Resources\BigliettoNT1.png" />
+    <None Include="Resources\BigliettoNT2.png" />
+    <None Include="Resources\bullet_ball_glass_red.png" />
+    <None Include="Resources\bullet_ball_glass_green.png" />
+    <None Include="Resources\bullet_ball_green.png" />
+    <None Include="Resources\bullet_ball_red.png" />
+    <None Include="Resources\WinTicketSplash.png" />
+    <None Include="Resources\link_add.png" />
+    <None Include="Resources\link_delete.png" />
+    <None Include="Resources\edit.png" />
+    <None Include="Resources\document_new.png" />
+    <None Include="Resources\document_edit.png" />
+    <None Include="Resources\face_scan.png" />
+    <None Include="Resources\face_scan1.png" />
+    <None Include="Resources\security_badge.png" />
+    <None Include="Resources\document_delete.png" />
+    <None Include="Resources\lock_CNS_128_S.png" />
+    <None Include="Resources\barcode_BFD_32_S.png" />
+    <None Include="Resources\add_BF_32_S.png" />
+    <None Include="Resources\bullet_triangle_green_BF_32_S.png" />
+    <None Include="Resources\delete_BF_32_S.png" />
+    <None Include="Resources\moneybag_euro_BFD_32_S.png" />
+    <None Include="Resources\keys_CNS_32_S.png" />
+    <None Include="Resources\sign_warning_BF_16_P.png" />
+    <None Include="Resources\about_BF_16_P.png" />
+    <None Include="Resources\money2_add_BFD_32_S.png" />
+    <None Include="Resources\money_BFD_32_S.png" />
+    <None Include="Resources\scroll_BF_32_S.png" />
+    <None Include="Resources\sign_warning_BF_32_S.png" />
+    <None Include="Resources\delete_BF_16_P.png" />
+    <None Include="Resources\users2_OPI_16_P.png" />
+    <None Include="Resources\money2_add_BFD_16_P.png" />
+    <None Include="Resources\printer_BF_16_P.png" />
+    <None Include="Resources\signal_flag_red_OPI_32_S.png" />
+    <None Include="Resources\signal_flag_green_OPI_32_S.png" />
+    <None Include="Resources\credit_card_BFD_16_P.png" />
+    <None Include="Resources\money2_BFD_16_P.png" />
+    <None Include="Resources\smartcard_BFD_16_P.png" />
+    <None Include="Resources\layout_horizontal_SGM_32_S.png" />
+    <None Include="Resources\paperclip_BFD_32_S.png" />
+    <None Include="Resources\table_cell_BFD_32_S.png" />
+    <None Include="Resources\table2_selection_all_BFD_32_S.png" />
+    <None Include="Resources\table2_selection_cell_BFD_32_S.png" />
+    <Content Include="it-IT\DevExpress.Data.v12.2.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.Office.v12.2.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.PivotGrid.v12.2.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.Printing.v12.2.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.RichEdit.v12.2.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.Utils.v12.2.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.Utils.v12.2.UI.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.Xpo.v12.2.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraBars.v12.2.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraCharts.v12.2.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraCharts.v12.2.Wizard.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraEditors.v12.2.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraGauges.v12.2.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraGauges.v12.2.Presets.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraGrid.v12.2.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraLayout.v12.2.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraNavBar.v12.2.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraPrinting.v12.2.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraReports.v12.2.Extensions.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraReports.v12.2.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraRichEdit.v12.2.Extensions.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraRichEdit.v12.2.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraScheduler.v12.2.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraScheduler.v12.2.Extensions.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraScheduler.v12.2.Reporting.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraScheduler.v12.2.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraSpellChecker.v12.2.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraTreeList.v12.2.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraVerticalGrid.v12.2.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="it-IT\DevExpress.XtraWizard.v12.2.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\view_BF_32_S.png" />
+    <None Include="Resources\id_card_CNS_32_S.png" />
+    <None Include="Resources\id_card2_CNS_32_S.png" />
+    <None Include="Resources\garbage_full_BF_32_S.png" />
+    <None Include="Resources\garbage_make_empty_BF_32_S.png" />
+    <None Include="Resources\scroll_BF_16_P.png" />
+    <None Include="Resources\earth_network_CNS_32_S.png" />
+    <None Include="Resources\scroll2_BF_16_P.png" />
+    <None Include="Resources\scroll2_BF_32_S.png" />
+    <None Include="Resources\earth_CNS_16_P.png" />
+    <None Include="Resources\document_lock_BF_16_P.png" />
+    <None Include="Resources\unife.png" />
+    <Content Include="ticket_yellow.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MergeSyncLib\MergeSyncLib.csproj">
+      <Project>{E0F6873E-AD46-4DA9-9AEE-42C8BD0312A8}</Project>
+      <Name>MergeSyncLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PreventWebServices\PreventWebServices.csproj">
+      <Project>{E12FEC30-7CC7-4E3C-902F-70B05263FA4D}</Project>
+      <Name>PreventWebServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WinTicketDal\WinTicketDal.csproj">
+      <Project>{143D99DF-4E31-4B30-9E1B-3FA70679A417}</Project>
+      <Name>WinTicketDal</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="DevExpress.CodeParser.v12.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.PivotGrid.v12.2.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.RichEdit.v12.2.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraCharts.v12.2.Extensions">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraNavBar.v12.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraScheduler.v12.2.Reporting">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraVerticalGrid.v12.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.ConnectionInfo">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Diagnostics.STrace">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Dmf">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Management.Sdk.Sfc">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Management.SmoMetadataProvider">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Management.SqlParser">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Rmo">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.ServiceBrokerEnum">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Smo">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.SqlClrProvider">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.SqlEnum">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://bsoftsrl.it/" name="WSPreventService" targetNamespace="http://bsoftsrl.it/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://biglietteria.comune.fe.it:80/BSWSPrevent/WSPrevent?xsd=1" namespace="http://bsoftsrl.it/" />
+    </xsd:schema>
+  </types>
+  <message name="delete">
+    <part name="parameters" element="tns:delete" />
+  </message>
+  <message name="deleteResponse">
+    <part name="parameters" element="tns:deleteResponse" />
+  </message>
+  <message name="Exception">
+    <part name="fault" element="tns:Exception" />
+  </message>
+  <message name="version">
+    <part name="parameters" element="tns:version" />
+  </message>
+  <message name="versionResponse">
+    <part name="parameters" element="tns:versionResponse" />
+  </message>
+  <message name="calendar">
+    <part name="parameters" element="tns:calendar" />
+  </message>
+  <message name="calendarResponse">
+    <part name="parameters" element="tns:calendarResponse" />
+  </message>
+  <message name="book">
+    <part name="parameters" element="tns:book" />
+  </message>
+  <message name="bookResponse">
+    <part name="parameters" element="tns:bookResponse" />
+  </message>
+  <portType name="WSPrevent">
+    <operation name="delete">
+      <input message="tns:delete" />
+      <output message="tns:deleteResponse" />
+      <fault name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="version">
+      <input message="tns:version" />
+      <output message="tns:versionResponse" />
+    </operation>
+    <operation name="calendar">
+      <input message="tns:calendar" />
+      <output message="tns:calendarResponse" />
+      <fault name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="book">
+      <input message="tns:book" />
+      <output message="tns:bookResponse" />
+      <fault name="Exception" message="tns:Exception" />
+    </operation>
+  </portType>
+  <binding name="WSPreventPortBinding" type="tns:WSPrevent">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="delete">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="version">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="calendar">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="book">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+  </binding>
+  <service name="WSPreventService">
+    <port name="WSPreventPort" binding="tns:WSPreventPortBinding">
+      <soap:address location="http://biglietteria.comune.fe.it:80/BSWSPrevent/WSPrevent" />
+    </port>
+  </service>
+</definitions>

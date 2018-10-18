@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--Created with Liquid XML Studio - FREE Community Edition 7.0.4.795 (http://www.liquid-technologies.com)-->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" id="prevent" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Out">
+    <xs:complexType>
+      <xs:attribute name="DescrizioneErrore" type="xs:string" use="optional" />
+      <xs:attribute name="ReturnCode" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

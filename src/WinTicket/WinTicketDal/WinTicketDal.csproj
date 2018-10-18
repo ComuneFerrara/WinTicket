@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{143D99DF-4E31-4B30-9E1B-3FA70679A417}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WinTicketDal</RootNamespace>
+    <AssemblyName>WinTicketDal</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Printing.v12.2.Core, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v12.2, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v12.2, Version=12.2.18.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Biglietto.cs" />
+    <Compile Include="Matricola.cs" />
+    <Compile Include="CloneIXPSimpleObjectHelper.cs" />
+    <Compile Include="RigaFattura.cs" />
+    <Compile Include="Fattura.cs" />
+    <Compile Include="Progressivo.cs" />
+    <Compile Include="TransazioneWeb.cs" />
+    <Compile Include="ConfigurazionePivot.cs" />
+    <Compile Include="CodiceSconto.cs" />
+    <Compile Include="Card.cs" />
+    <Compile Include="AnagraficaCard.cs" />
+    <Compile Include="Provenienza.cs" />
+    <Compile Include="enum\EnumTipoStampa.cs" />
+    <Compile Include="enum\EnumStatoCard.cs" />
+    <Compile Include="enum\EnumTipologiaCard.cs" />
+    <Compile Include="IngressoCalendario.cs" />
+    <Compile Include="IngressoCategoria.cs" />
+    <Compile Include="enum\EnumTipologiaEventoParticolare.cs" />
+    <Compile Include="EventoParticolare.cs" />
+    <Compile Include="EntrataPosticipata.cs" />
+    <Compile Include="enum\EnumStatusEntrata.cs" />
+    <Compile Include="MessaggioConferma.cs" />
+    <Compile Include="enum\EnumSyncMode.cs" />
+    <Compile Include="enum\EnumTipologiaVersamento.cs" />
+    <Compile Include="Versamento.cs" />
+    <Compile Include="enum\EnumTipologiaBiglietto.cs" />
+    <Compile Include="PostazioneAccesso.cs" />
+    <Compile Include="PostazioneIngresso.cs" />
+    <Compile Include="enum\EnumTipologiaPostazioneIngresso.cs" />
+    <Compile Include="enum\EnumTipologiaPostazione.cs" />
+    <Compile Include="enum\EnumSyncResult.cs" />
+    <Compile Include="enum\EnumStatoVendita.cs" />
+    <Compile Include="enum\EnumTipologiaIngresso.cs" />
+    <Compile Include="RigaStampaIngresso.cs" />
+    <Compile Include="enum\EnumIncasso.cs" />
+    <Compile Include="enum\EnumAccesso.cs" />
+    <Compile Include="OrdineIngresso.cs" />
+    <Compile Include="Entrata.cs" />
+    <Compile Include="enum\EnumDisponibilita.cs" />
+    <Compile Include="enum\EnumPrenotazioneIngresso.cs" />
+    <Compile Include="enum\EnumTipologiaDue.cs" />
+    <Compile Include="enum\EnumTipologiaEconomica.cs" />
+    <Compile Include="enum\EnumTipologiaPercorso.cs" />
+    <Compile Include="enum\EnumTipologiaTre.cs" />
+    <Compile Include="enum\EnumTipologiaUno.cs" />
+    <Compile Include="enum\EnumTipoMessaggio.cs" />
+    <Compile Include="Importo.cs" />
+    <Compile Include="Ingresso.cs" />
+    <Compile Include="Messaggio.cs" />
+    <Compile Include="MuseiBase.cs" />
+    <Compile Include="ObjectDomainBase.cs" />
+    <Compile Include="ObjectInfo.cs" />
+    <Compile Include="Percorso.cs" />
+    <Compile Include="Postazione.cs" />
+    <Compile Include="Prenotazione.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RigaVenditaVariante.cs" />
+    <Compile Include="SoggettoEconomico.cs" />
+    <Compile Include="Stampa.cs" />
+    <Compile Include="Struttura.cs" />
+    <Compile Include="Titolo.cs" />
+    <Compile Include="UserBase.cs" />
+    <Compile Include="Utente.cs" />
+    <Compile Include="Variante.cs" />
+    <Compile Include="Vendita.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

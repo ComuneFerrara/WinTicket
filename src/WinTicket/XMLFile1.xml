@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Out Denominazione="ISTITUTO COMPRENSIVO SANT'ELPIDIO A MARE - SANT'ELPIDIO A MARE (FM)" NumeroPrenotazione="51265" PaxTotali="44" Scuola="S" TipoGS="G">
+  <RigaPercorsoVisita>
+    <IdMostra>240</IdMostra>
+    <DataVisita>2018-03-13</DataVisita>
+    <OraVisita>10:30:00.0000</OraVisita>
+    <PaxVisita>22</PaxVisita>
+  </RigaPercorsoVisita>
+  <RigaPercorsoVisita>
+    <IdMostra>240</IdMostra>
+    <DataVisita>2018-03-13</DataVisita>
+    <OraVisita>10:40:00.0000</OraVisita>
+    <PaxVisita>22</PaxVisita>
+  </RigaPercorsoVisita>
+  <RigaBiglietti>
+    <IdTipoBiglietto>211</IdTipoBiglietto>
+    <Quantita>4</Quantita>
+  </RigaBiglietti>
+  <RigaBiglietti>
+    <IdTipoBiglietto>278</IdTipoBiglietto>
+    <Quantita>40</Quantita>
+  </RigaBiglietti>
+</Out>
